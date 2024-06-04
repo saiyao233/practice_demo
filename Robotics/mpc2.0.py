@@ -25,12 +25,12 @@ dt = T / N  # 步长
 theta = SX.sym('theta', 3)
 theta_dot = SX.sym('theta_dot', 3)
 print(theta,theta_dot)
-# # 控制变量
-# u = SX.sym('u', 3)
+# 控制变量
+u = SX.sym('u', 3)
 
-# # 状态方程
-# state = vertcat(theta, theta_dot)
-# dynamics = vertcat(theta_dot, u)
+# 状态方程
+state = vertcat(theta, theta_dot)
+dynamics = vertcat(theta_dot, u)
 
 # # 目标函数和约束
 # Q = np.diag([1000, 1000, 1000])
